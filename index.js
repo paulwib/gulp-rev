@@ -36,7 +36,7 @@ var plugin = function () {
 		}
 
 		// save the old path for later
-		file.revOrigPath = file.path;
+		file.revOrigPath = file.relative;
 		file.revOrigBase = file.base;
 
 		var hash = file.revHash = md5(file.contents).slice(0, 8);
